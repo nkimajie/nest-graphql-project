@@ -7,6 +7,12 @@ import { AuthResponse } from '../../shared/services/base/base.dto';
 export class AuthResolver {
   constructor(private authService: AuthService) {}
 
+  /**
+   * Register a new user.
+   *
+   * @param data The registration data.
+   * @returns An object containing a success message and the JWT token.
+   */
   @Mutation(() => AuthResponse)
   async register(@Args('data') data: RegisterDto) {
     const response = await this.authService.register(
@@ -21,6 +27,12 @@ export class AuthResolver {
     };
   }
 
+  /**
+   * Login an existing user.
+   *
+   * @param data The login data.
+   * @returns An object containing a success message and the JWT token.
+   */
   @Mutation(() => AuthResponse)
   async login(@Args('data') data: LoginDto) {
     const response = await this.authService.login(data.email, data.password);
@@ -31,6 +43,12 @@ export class AuthResolver {
     };
   }
 
+  /**
+   * Login an existing user with a biometric key.
+   *
+   * @param data The biometric key.
+   * @returns An object containing a success message and the JWT token.
+   */
   @Mutation(() => AuthResponse)
   async biometricLogin(@Args('data') data: BiometricLoginDto) {
     const response = await this.authService.biometricLogin(data.biometricKey);
