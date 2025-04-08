@@ -93,11 +93,11 @@ npm run start:dev
 ```
 
 API will be available at:  
-👉 `http://localhost:4101/graphql`
+- `http://localhost:4101/graphql`
 
 ---
 
-## 🥪 Testing
+##  Testing
 
 To run unit tests:
 
