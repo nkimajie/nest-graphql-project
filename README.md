@@ -9,18 +9,18 @@ A secure API built with NestJS, GraphQL, Prisma, and PostgreSQL (via Docker) tha
 
 ---
 
-## 🚀 Features
+## 🚀🚀🚀 Features
 
-- 🔒 Hashed password storage using bcrypt
-- �� Biometric authentication using a unique key
-- 🛆 Prisma ORM with PostgreSQL
-- 🔗 GraphQL API (Code-First with Apollo)
-- 🐳 Dockerize PostgreSQL setup
-- ✅ Unit-tested authentication logic
+-  Hashed password storage using bcrypt
+-  Biometric authentication using a unique key
+-  Prisma ORM with PostgreSQL
+-  GraphQL API (Code-First with Apollo)
+-  Dockerize PostgreSQL setup
+-  Unit-tested authentication logic
 
 ---
 
-## 🧰 Prerequisites
+## Prerequisites
 
 Make sure you have the following installed:
 
@@ -30,7 +30,7 @@ Make sure you have the following installed:
 
 ---
 
-## 📦 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -107,9 +107,9 @@ npm run test
 
 ---
 
-## 🧠 GraphQL Example Queries
+## GraphQL Example Queries
 
-### ✅ Register (using postman)
+### Register (using postman)
 
 ```graphql
 {
@@ -168,7 +168,7 @@ src/
 
 ---
 
-## 📜 License
+## License
 
-MIT — feel free to use, share, and modify.
+feel free to use, share, and modify.
 
