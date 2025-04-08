@@ -1,4 +1,3 @@
-// src/auth/auth.resolver.ts
 import { Resolver, Mutation, Args } from '@nestjs/graphql';
 import { AuthService } from '../service/auth.service';
 import { BiometricLoginDto, LoginDto, RegisterDto } from '../dto/auth.dto';
