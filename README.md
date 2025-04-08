@@ -109,35 +109,45 @@ npm run test
 
 ## 🧠 GraphQL Example Queries
 
-### ✅ Register
+### ✅ Register (using postman)
 
 ```graphql
-mutation {
-  register(data: {
-    email: "test@example.com"
-    password: "password123"
-  })
+{
+  "query": "mutation Register($data: RegisterDto!) { register(data: $data) { message accessToken }}",
+  "variables": {
+    "data": {
+      "email": "takonajie2@gmail.com",
+      "password": "123456"
+    }
+  }
 }
+
 ```
 
 ### 🔐 Login
 
 ```graphql
-mutation {
-  login(data: {
-    email: "test@example.com"
-    password: "password123"
-  })
+{
+  "query": "mutation Login($data: LoginDto!) { login(data: $data) { message accessToken }}",
+  "variables": {
+    "data": {
+      "email": "takonajie1@gmail.com",
+      "password": "123456"
+    }
+  }
 }
 ```
 
 ### 🦬 Biometric Login
 
 ```graphql
-mutation {
-  biometricLogin(data: {
-    biometricKey: "some-unique-biometric-id"
-  })
+{
+  "query": "mutation BiometricLogin($data: BiometricLoginDto!) { biometricLogin(data: $data) { message accessToken }}",
+  "variables": {
+    "data": {
+      "biometricKey": "123456"
+    }
+  }
 }
 ```
 
