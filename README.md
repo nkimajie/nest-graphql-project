@@ -116,7 +116,7 @@ npm run test
   "query": "mutation Register($data: RegisterDto!) { register(data: $data) { message accessToken }}",
   "variables": {
     "data": {
-      "email": "takonajie2@gmail.com",
+      "email": "test1@gmail.com",
       "password": "123456"
     }
   }
@@ -124,21 +124,21 @@ npm run test
 
 ```
 
-### 🔐 Login
+### Login (using postman)
 
 ```graphql
 {
   "query": "mutation Login($data: LoginDto!) { login(data: $data) { message accessToken }}",
   "variables": {
     "data": {
-      "email": "takonajie1@gmail.com",
+      "email": "test1@gmail.com",
       "password": "123456"
     }
   }
 }
 ```
 
-### 🦬 Biometric Login
+### Biometric Login (using postman)
 
 ```graphql
 {
@@ -153,7 +153,7 @@ npm run test
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
