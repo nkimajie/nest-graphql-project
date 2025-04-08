@@ -124,6 +124,22 @@ npm run test
 
 ```
 
+### Biometric Registration (using postman)
+
+```graphql
+{
+  "query": "mutation Register($data: RegisterDto!) { register(data: $data) { message accessToken }}",
+  "variables": {
+    "data": {
+      "email": "test1@gmail.com",
+      "password": "123456",
+      "biometricKey": "123456"
+    }
+  }
+}
+
+```
+
 ### Login (using postman)
 
 ```graphql
