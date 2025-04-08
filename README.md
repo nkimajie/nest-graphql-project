@@ -1,4 +1,4 @@
-# NestJS GraphQL Authentication API Test
+# NestJS GraphQL Authentication API
 
 A secure API built with NestJS, GraphQL, Prisma, and PostgreSQL (via Docker) that supports:
 
